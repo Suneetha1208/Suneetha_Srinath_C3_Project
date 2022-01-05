@@ -96,8 +96,7 @@ class RestaurantTest {
         assertEquals(0, restaurant.getTotalAmount(items));
 
     }
-
-     //"Part 3: Solution"
+    
     @Test
     public void when_items_are_selected_and_then_removed_from_the_menu_return_the_total_amount() {
         List<String> items = new ArrayList<String>();
