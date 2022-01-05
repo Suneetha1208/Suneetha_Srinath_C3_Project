@@ -69,7 +69,7 @@ class RestaurantTest {
         restaurant.removeFromMenu("Vegetable lasagne");
         assertEquals(initialMenuSize - 1, restaurant.getMenu().size());
     }
-//"Part 3: Failing test case"
+
     @Test
     public void removing_item_that_does_not_exist_should_throw_exception() {
         assertThrows(itemNotFoundException.class, () -> restaurant.removeFromMenu("French fries"));
@@ -97,6 +97,7 @@ class RestaurantTest {
 
     }
 
+     //"Part 3: Solution"
     @Test
     public void when_items_are_selected_and_then_removed_from_the_menu_return_the_total_amount() {
         List<String> items = new ArrayList<String>();
